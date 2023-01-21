@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+            <form action="#" method="get" class="form" id="form" name="myForm" onsubmit="return validate()">  
+                <h2>Signup</h2>
+                <hr> <br>
+                <label>Name</label> <input type="text" name="fName" required><span class="formError" id="sName"></span> 
+                <label>Email</label> <input type="email" name="fEmail" required> <span class="formError" id="sEmail"></span>
+                <label>Password</label> <input type="text" name="fPass" required> <span class="formError" id="sPass"></span>
+                <label>Confirm Password</label> <input type="text" name="fCPass" required> <span class="formError" id="scPass"></span>
+                <button type="submit" name="signup" class="signup" >Signup</button >
+                <label id="link"><a href="./login.html">I have a account</a></label>
+            </form>
+
+            <!-- <form action="" id="form">
+                <input type="text" name="username">
+                <input type="text" name="password">
+                <button type="submit">Submit</button>
+            </form> -->
+        
+    </div>
+
+
+    <script src="./script.js"></script>
+
+    <!-- <script>
+        const form = document.getElementById('form');
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+
+            const payload= new FormData(form);
+            console.log([...payload]);
+        })
+    </script> -->
+
+</body>
+</html>
